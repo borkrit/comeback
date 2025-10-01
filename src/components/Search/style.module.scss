@@ -1,0 +1,25 @@
+.search{
+  margin-top: 20px;
+  input{
+    &::placeholder{
+      color: white;
+    }
+  }
+
+  .lists{
+    height: 0;
+    transition: height 1s linear  ;
+    visibility: hidden;
+    &__expand{
+      visibility: visible;
+      height: 250px;
+    }
+
+    div{
+      padding-inline: 10px;
+      &:hover{
+        background-color: rgba(211, 211, 211, 0.11);
+      }
+    }
+  }
+}
