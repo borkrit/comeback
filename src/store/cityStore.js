@@ -21,14 +21,18 @@ const useCities = create((set,get)=>({
     },
 
     rehydrate: ()=>{
-        const localData = JSON.parse(localStorage.getItem("cities"))
-
-        for (const data of localData) {
-            set((state)=>({
-                cities: [...state.cities,data],
-            }))
-            get().refreshCurrentCity(data.name)
+        const localData = localStorage.getItem("cities")
+        if(localData){
+           const parsed=  JSON.parse(localData)
+            for (const data of parsed) {
+                set((state)=>({
+                    cities: [...state.cities,data],
+                }))
+                get().refreshCurrentCity(data.name)
+            }
         }
+
+
 
     },
 
