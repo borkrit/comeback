@@ -2,7 +2,7 @@
 const nextConfig = {
     reactStrictMode: false,
     env: {
-        API_KEY:'385e8b75af62a7a03ee7716462f7c443'
+        API_KEY:'ac0248341e41f55ccb7f156a48b8b52b'
     },
 };
 
