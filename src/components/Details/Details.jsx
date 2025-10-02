@@ -1,5 +1,6 @@
 'use client'
 import useCities from "@/store/cityStore";
+import Link from "next/link";
 import Image from "next/image";
 import style from './style.module.scss'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';

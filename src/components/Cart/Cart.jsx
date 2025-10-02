@@ -9,7 +9,6 @@ const Cart = ({city}) => {
     const removeCity = useCities(state => state.removeCity);
     const refreshCurrentCity = useCities(state => state.refreshCurrentCity);
 
-    console.log(city)
     return (
         <div className={style.city}>
             <Link style={{flex:1,display:'flex',justifyContent:'center',alignItems:'start',gap:'30px'}}
