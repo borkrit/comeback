@@ -16,7 +16,7 @@ const Search = () => {
     useEffect(() => {
         async function fetchData() {
             setLoading(true)
-            const data = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=5&appid=${API}`);
+            const data = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=5&appid=${API}`);
             const res = await data.json();
             setLists(res)
             setLoading(false)
